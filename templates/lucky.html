@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Greeter Form 2{% endblock %}
+
+{% block content %}
+<h1>Your lucky number is: {{lucky_num}}</h1>
+<p>{{msg}}</p>
+
+{% if lucky_num == 3 %}:
+<h2>That's my lucky number too!</h2>
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTZkNTIyZTY4MzYyMWZjYWMwZjYzM2MzODhhZjQ3ZWZmMjVkMDgzNSZjdD1n/111ebonMs90YLu/giphy.gif"
+    alt="">
+{% else %}
+<h2>{{lucky_num}} is not my lucky number</h2>
+<img src="https://media.tenor.com/5aF7np_zPEgAAAAM/pepe-why-pepe-the-frog.gif" alt="">
+{% endif %}
+{% endblock %}
